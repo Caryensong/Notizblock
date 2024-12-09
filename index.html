@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notizblock</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icon/icon_n.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/assets.css">
+    <script src="./script/templates.js"></script>
+    <script src="./script.js"></script>
+  </head>
+  <body onload="init()">
+    <div id="main_header">
+      <section class="header_section">
+        <header class="header">
+          <img src="./assets/icon/icon_n.png" alt="Notizblock" />
+          <span>Notizblock</span>
+        </header>
+      </section>
+    </div>
+
+    <main>
+      <section class="start_menu">
+        <h1>Notes</h1>
+
+        <div class="input_main">
+            <h2>Title:</h2>
+            <input id="titleInput" type="text" placeholder="Title" required>
+            <h2>to do:</h2>
+            <input id="noteInput" type="text" placeholder="to do" required>    
+          <button class="save_btn" onclick="addNoteAndTitle()">Add Note</button>
+          <div id="errorInput"></div>
+        </div>
+
+        <section id="content"></section>
+
+        <h2><img src="./assets/icon/ordner.png" alt="Archiv">Archive</h2>
+        <div id="saveContent"></div>
+        
+        <h2><img src="./assets/icon/trash.png" alt="trash">Trash</h2>
+        <div id="trashContent"> </div>
+        <div id="deleteAll"></div>
+   
+      </section>
+    </main>
+
+
+  </body>
+</html>

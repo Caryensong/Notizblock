@@ -1,0 +1,42 @@
+/* für button oder kleine komponenten */
+
+button img {
+  width: 20px;
+  height: 20px;
+}
+
+button.save_btn {
+  border-radius: 0%;
+  width: 100%;
+  cursor: pointer;
+}
+
+button {
+  background-color: #beaf1f77;
+  border: 1px solid #beaf1f77;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+#errorInput{
+  color:red;
+}
+#deleteAll{
+  display: flex;
+  flex-direction: column;
+}
+.delete_all_btn{
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 0%;
+}
